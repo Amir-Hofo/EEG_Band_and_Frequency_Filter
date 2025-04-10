@@ -64,7 +64,7 @@ def power_spectrum(signal, fs):
     return positive_freq, positive_power
 
 def app_fn():
-    st.title("EEG Task NeuroChallenge")
+    st.title("EEG Band and Frequency Filter GUI app")
     st.markdown("[Visit my portfolio](https://amir-hofo.github.io/Portfolio/)")
     data_selection= st.selectbox("Choose your task", ["band selection", "frequency filter"])
     fs= st.number_input("Sampling frequency (fs)", value= 256)
